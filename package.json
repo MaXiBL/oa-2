@@ -1,0 +1,53 @@
+{
+  "name": "openseadragon-annotations-2",
+  "version": "1.0.0",
+  "description": "this is an annotation plugin of OpenSeadragon",
+  "main": "index.js",
+  "repository": "git@gitlab.com:Thomas365/openseadragon-annotations-2.git",
+  "author": "fangjun <fangjund365@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "webpack-dev-server --inline --watch --config build/webpack.serve.conf.js",
+    "dev": "webpack --progress --watch --config build/webpack.dev.conf.js",
+    "build": "webpack --progress --config build/webpack.pro.conf.js",
+    "createTile": "node create_tiles.js"
+  },
+  "dependencies": {
+    "flux": "^3.1.3",
+    "preact": "^8.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@types/flux": "^3.1.8",
+    "address": "^1.1.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "chalk": "^2.4.2",
+    "css-loader": "^3.0.0",
+    "eslint": "^6.0.1",
+    "eslint-loader": "^2.2.1",
+    "file-loader": "^4.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "jquery": "^3.4.1",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "openseadragon": "^2.4.1",
+    "portfinder": "^1.0.21",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-url": "^8.0.0",
+    "sharp": "^0.23.3",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "url-loader": "^2.0.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  }
+}

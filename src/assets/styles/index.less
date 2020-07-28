@@ -1,0 +1,49 @@
+svg {
+  polyline,
+  polygon,
+  line,
+  ellipse,
+  rect,
+  path{
+    // fill: none;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+    cursor: pointer;
+    &.active{
+      stroke: rgb(255, 255, 0);
+    }
+  }
+}
+.icon-close{
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background-image: url('../images/icon_close.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+.start-point,
+.end-point{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  // background-color: #fff;
+}
+.measure-tip{
+  position: absolute;
+  // transform: translate(-50%, -50%);
+  display:inline-block;
+  padding: 0 5px;
+  height: 20px;
+  color: #fff;
+  background-color: #2E2E35;
+  border-radius: 10px;
+  font-size: 9px;
+  font-weight: normal;
+  line-height: 20px;
+  user-select: none;
+}
